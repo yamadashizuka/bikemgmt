@@ -1,0 +1,16 @@
+ja:
+  activerecord:
+    attributes:
+      itemtype:
+        name: 名称
+        limitdistance: 交換距離
+        memo: 備考
+      item:
+        nickname: 識別名
+        distance: 距離
+        memo: 備考
+      itemhistory:
+        start_date: 取付日時
+        end_date: 取外日時
+        distance: 距離
+        memo: 備考
