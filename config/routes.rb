@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root to: 'menu#show'
+  get 'menu/show'
+
   resources :bikes
 
   resources :itemhistories

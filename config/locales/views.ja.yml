@@ -1,0 +1,9 @@
+ja:
+  views:
+    menu:
+      show:
+        title: トップメニュー
+        bikes: バイク情報
+        members: メンバー情報
+    bikes:
+      index: 保有バイク一覧
