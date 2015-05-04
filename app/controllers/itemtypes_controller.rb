@@ -69,6 +69,6 @@ class ItemtypesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def itemtype_params
-      params.require(:itemtype).permit(:name, :limitdistance, :memo)
+      params.require(:itemtype).permit(:bike_id, :name, :limitdistance, :memo)
     end
 end

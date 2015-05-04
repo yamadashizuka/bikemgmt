@@ -1,6 +1,10 @@
 ja:
   activerecord:
     attributes:
+      bike:
+        nickname: 識別名
+        type: 型式
+        memo: 備考
       itemtype:
         name: 名称
         limitdistance: 交換距離

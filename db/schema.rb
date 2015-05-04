@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150504030828) do
+ActiveRecord::Schema.define(version: 20150504035059) do
+
+  create_table "bikes", force: true do |t|
+    t.string   "nickname"
+    t.string   "type"
+    t.text     "memo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "itemhistories", force: true do |t|
     t.integer  "item_id"
@@ -42,6 +50,9 @@ ActiveRecord::Schema.define(version: 20150504030828) do
     t.text     "memo"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "bike_id"
   end
+
+  add_index "itemtypes", ["bike_id"], name: "index_itemtypes_on_bike_id"
 
 end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @bike.nickname %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @bike.type %>
+</p>
+
+<p>
+  <strong>Memo:</strong>
+  <%= @bike.memo %>
+</p>
+
+<%= link_to 'Edit', edit_bike_path(@bike) %> |
+<%= link_to 'Back', bikes_path %>
