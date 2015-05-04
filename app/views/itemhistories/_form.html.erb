@@ -1,0 +1,37 @@
+<%= form_for(@itemhistory) do |f| %>
+  <% if @itemhistory.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@itemhistory.errors.count, "error") %> prohibited this itemhistory from being saved:</h2>
+
+      <ul>
+      <% @itemhistory.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :item_id %><br>
+    <%= f.text_field :item_id %>
+  </div>
+  <div class="field">
+    <%= f.label :start_date %><br>
+    <%= f.datetime_select :start_date %>
+  </div>
+  <div class="field">
+    <%= f.label :end_date %><br>
+    <%= f.datetime_select :end_date %>
+  </div>
+  <div class="field">
+    <%= f.label :distance %><br>
+    <%= f.text_field :distance %>
+  </div>
+  <div class="field">
+    <%= f.label :memo %><br>
+    <%= f.text_area :memo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

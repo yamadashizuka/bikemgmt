@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  limitdistance: 9.99
+  memo: MyText
+
+two:
+  name: MyString
+  limitdistance: 9.99
+  memo: MyText

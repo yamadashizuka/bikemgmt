@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @itemhistory.item %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @itemhistory.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @itemhistory.end_date %>
+</p>
+
+<p>
+  <strong>Distance:</strong>
+  <%= @itemhistory.distance %>
+</p>
+
+<p>
+  <strong>Memo:</strong>
+  <%= @itemhistory.memo %>
+</p>
+
+<%= link_to 'Edit', edit_itemhistory_path(@itemhistory) %> |
+<%= link_to 'Back', itemhistories_path %>
