@@ -1,5 +1,7 @@
 ja:
   views:
+    navbar:
+      home: トップ
     menu:
       show:
         title: トップメニュー
@@ -7,3 +9,11 @@ ja:
         members: メンバー情報
     bikes:
       index: 保有バイク一覧
+      show: バイク詳細確認
+      mainte: メンテナンス情報登録
+    itemtype:
+      index: 距離管理対象部品
+    common:
+      new: 新規登録
+      edit: 編集
+      show: 確認

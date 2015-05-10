@@ -3,7 +3,7 @@ ja:
     attributes:
       bike:
         nickname: 識別名
-        type: 型式
+        typename: 型式
         memo: 備考
       itemtype:
         name: 名称

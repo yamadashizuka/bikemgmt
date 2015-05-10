@@ -1,19 +1,23 @@
+<div class="page-header">
+  <h1><%= t('views.bikes.show') %></h1>
+</div>
+
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Nickname:</strong>
+  <strong><%= t('activerecord.attributes.bike.nickname') %>:</strong>
   <%= @bike.nickname %>
 </p>
 
 <p>
-  <strong>Type:</strong>
-  <%= @bike.type %>
+  <strong><%= t('activerecord.attributes.bike.typename') %>:</strong>
+  <%= @bike.typename %>
 </p>
 
 <p>
-  <strong>Memo:</strong>
+  <strong><%= t('activerecord.attributes.bike.memo') %>:</strong>
   <%= @bike.memo %>
 </p>
 
-<%= link_to 'Edit', edit_bike_path(@bike) %> |
-<%= link_to 'Back', bikes_path %>
+<%= link_to 'Edit', edit_bike_path(@bike), :class=>"btn btn-primary btn-sm" %>
+<%= link_to 'Back', bikes_path, :class=>"btn btn-default btn-sm" %>

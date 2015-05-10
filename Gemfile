@@ -38,3 +38,10 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+# for bootswatch
+gem 'twitter-bootswatch-rails', '~> 3.1.1'
+gem 'twitter-bootswatch-rails-helpers'
+gem 'execjs'
+gem 'less-rails'
+gem 'therubyracer'
